@@ -54,10 +54,10 @@ public:
     void update_diagram(float power){
 
         if(power < 1){
-            rectangle(diag, Point(302,275),Point(323, 275 + (-1 * power * ((383.0 - 278)/100.0))),Scalar(0,0,200),-1);
+            rectangle(diag, Point(303,275),Point(322, 275 + (-1 * power * ((383.0 - 278)/100.0))),Scalar(0,0,200),-1);
         }
         else if(power > 1){
-            rectangle(diag, Point(302,275),Point(323, 275 - power * ((383.0 - 278)/100.0)),Scalar(200,0,0),-1);
+            rectangle(diag, Point(303,275),Point(322, 275 - power * ((383.0 - 278)/100.0)),Scalar(200,0,0),-1);
         }
 
         img_bridge = cv_bridge::CvImage(header, sensor_msgs::image_encodings::RGB8, diag);
@@ -81,6 +81,12 @@ public:
             Forward / Backwards Thrust
         */
         rectangle(diag,Point(300,165),Point(325,385),Scalar(0,0,0),2);
+        /*
+            clears the thrust meter
+        */
+        rectangle(diag,Point(303,167),Point(322,383),Scalar(255,255,255),-1);
+
+
         putText(diag,"Forwards", Point(340, 185), 1, 1.15, Scalar(255,0,0),2);
         putText(diag,"Backwards", Point(340, 365), 1, 1.15, Scalar(0,0,255),2);
     }
