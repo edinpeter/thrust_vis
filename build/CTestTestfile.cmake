@@ -6,5 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(imu_msgs)
-SUBDIRS(thrust_vis)
 SUBDIRS(imu)
+SUBDIRS(thrust_vis)

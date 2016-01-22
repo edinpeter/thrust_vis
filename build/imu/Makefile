@@ -220,6 +220,62 @@ diagnostic_msgs_generate_messages_py/fast:
 .PHONY : diagnostic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+imu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : imu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: imu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make imu/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : imu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: imu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make imu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+imu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : imu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: imu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make imu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : imu/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: imu/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make imu/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 imu/CMakeFiles/imu_3dm_gx4.dir/rule:
 	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/imu_3dm_gx4.dir/rule
 .PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/rule
@@ -359,6 +415,174 @@ imu_3dm_gx4_genpy/fast:
 	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build.make imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build
 .PHONY : imu_3dm_gx4_genpy/fast
 
+# Convenience name for target.
+imu/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : imu/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: imu/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make imu/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : imu/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: imu/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/roscpp_generate_messages_eus.dir/build.make imu/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+imu/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : imu/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: imu/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make imu/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : imu/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: imu/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/roscpp_generate_messages_py.dir/build.make imu/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+imu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : imu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: imu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make imu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : imu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: imu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make imu/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+imu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : imu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: imu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make imu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : imu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: imu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make imu/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/peter/thrust_vis/build && $(MAKE) -f imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
 src/imu.o: src/imu.cpp.o
 .PHONY : src/imu.o
 
@@ -419,6 +643,10 @@ help:
 	@echo "... diagnostic_msgs_generate_messages_lisp"
 	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... edit_cache"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... imu_3dm_gx4"
 	@echo "... imu_3dm_gx4_gencpp"
 	@echo "... imu_3dm_gx4_generate_messages"
@@ -434,6 +662,18 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... src/imu.o"
 	@echo "... src/imu.i"

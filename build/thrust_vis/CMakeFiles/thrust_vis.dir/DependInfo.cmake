@@ -12,7 +12,7 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 SET(CMAKE_TARGET_DEFINITIONS
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
-  "ROS_PACKAGE_NAME=\"image_testing\""
+  "ROS_PACKAGE_NAME=\"thrust_vis\""
   )
 
 # Targets to which this target links.

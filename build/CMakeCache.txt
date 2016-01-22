@@ -380,7 +380,7 @@ learn_imu_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/orientation
 learn_imu_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/orientation
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/jade/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/jade/lib/libcv_bridge.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/jade/share/message_filters/cmake
@@ -450,6 +450,12 @@ tf2_ros_DIR:PATH=/opt/ros/jade/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/jade/share/tf/cmake
+
+//Value Computed by CMake
+thrust_vis_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/thrust_vis
+
+//Value Computed by CMake
+thrust_vis_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/thrust_vis
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/jade/share/xmlrpcpp/cmake

@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/image_testing.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_vis.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/image_testing/cmake" TYPE FILE FILES
-    "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/image_testingConfig.cmake"
-    "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/image_testingConfig-version.cmake"
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/thrust_vis/cmake" TYPE FILE FILES
+    "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_visConfig.cmake"
+    "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_visConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/image_testing" TYPE FILE FILES "/home/peter/thrust_vis/src/thrust_vis/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/thrust_vis" TYPE FILE FILES "/home/peter/thrust_vis/src/thrust_vis/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
