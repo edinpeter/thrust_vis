@@ -1,0 +1,8 @@
+prefix=/home/peter/thrust_vis/install
+
+Name: imu_msg
+Description: Description of imu_msg
+Version: 0.0.0
+Cflags: -I/home/peter/thrust_vis/install/include
+Libs: -L/home/peter/thrust_vis/install/lib 
+Requires: message_runtime
