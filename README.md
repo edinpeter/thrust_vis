@@ -1,0 +1,1 @@
+This repo is to demonstrate a simple node and combine it with OpenCV to have a visual representation of thruster power for an AUV
