@@ -1,10 +1,10 @@
 (cl:defpackage imu_msg-msg
   (:use )
   (:export
-   "<FILTEROUTPUT>"
-   "FILTEROUTPUT"
    "<POINTMSG>"
    "POINTMSG"
+   "<FILTEROUTPUT>"
+   "FILTEROUTPUT"
    "<STATSMSG>"
    "STATSMSG"
   ))

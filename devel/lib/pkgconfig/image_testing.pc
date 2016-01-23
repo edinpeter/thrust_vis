@@ -1,8 +1,0 @@
-prefix=/home/peter/thrust_vis/devel
-
-Name: image_testing
-Description: Description of image_testing
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/peter/thrust_vis/devel/lib 
-Requires: 

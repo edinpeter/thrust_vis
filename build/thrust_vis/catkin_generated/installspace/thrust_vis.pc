@@ -1,0 +1,8 @@
+prefix=/home/peter/thrust_vis/install
+
+Name: thrust_vis
+Description: Description of thrust_vis
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/peter/thrust_vis/install/lib 
+Requires: 

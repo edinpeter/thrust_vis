@@ -274,18 +274,6 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
-//The directory containing a CMake configuration file for actionlib.
-actionlib_DIR:PATH=/opt/ros/jade/share/actionlib/cmake
-
-//The directory containing a CMake configuration file for actionlib_msgs.
-actionlib_msgs_DIR:PATH=/opt/ros/jade/share/actionlib_msgs/cmake
-
-//Value Computed by CMake
-camera_launches_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/camera_launches
-
-//Value Computed by CMake
-camera_launches_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/camera_launches
-
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/jade/share/catkin/cmake
 
@@ -347,19 +335,11 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
-//Value Computed by CMake
-image_testing_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/thrust_vis
-
-//Value Computed by CMake
-image_testing_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/thrust_vis
-
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/jade/share/image_transport/cmake
 
 //Value Computed by CMake
 imu_3dm_gx4_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/imu
-
-imu_3dm_gx4_DIR:PATH=
 
 //Value Computed by CMake
 imu_3dm_gx4_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/imu
@@ -372,12 +352,6 @@ imu_msg_DIR:PATH=/home/peter/thrust_vis/devel/share/imu_msg/cmake
 
 //Value Computed by CMake
 imu_msg_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/imu_msgs
-
-//Value Computed by CMake
-learn_imu_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/orientation
-
-//Value Computed by CMake
-learn_imu_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/orientation
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/jade/lib/libcv_bridge.so
@@ -394,15 +368,6 @@ message_runtime_DIR:PATH=/opt/ros/jade/share/message_runtime/cmake
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/jade/share/pluginlib/cmake
 
-//Value Computed by CMake
-point_message_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/imu_msgs
-
-//The directory containing a CMake configuration file for point_message.
-point_message_DIR:PATH=/home/peter/thrust_vis/devel/share/point_message/cmake
-
-//Value Computed by CMake
-point_message_SOURCE_DIR:STATIC=/home/peter/thrust_vis/src/imu_msgs
-
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/jade/share/rosconsole/cmake
 
@@ -415,17 +380,11 @@ roscpp_serialization_DIR:PATH=/opt/ros/jade/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/jade/share/roscpp_traits/cmake
 
-//The directory containing a CMake configuration file for rosgraph.
-rosgraph_DIR:PATH=/opt/ros/jade/share/rosgraph/cmake
-
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/jade/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for roslib.
 roslib_DIR:PATH=/opt/ros/jade/share/roslib/cmake
-
-//The directory containing a CMake configuration file for rospy.
-rospy_DIR:PATH=/opt/ros/jade/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/jade/share/rostime/cmake
@@ -435,21 +394,6 @@ sensor_msgs_DIR:PATH=/opt/ros/jade/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/jade/share/std_msgs/cmake
-
-//The directory containing a CMake configuration file for tf2.
-tf2_DIR:PATH=/opt/ros/jade/share/tf2/cmake
-
-//The directory containing a CMake configuration file for tf2_msgs.
-tf2_msgs_DIR:PATH=/opt/ros/jade/share/tf2_msgs/cmake
-
-//The directory containing a CMake configuration file for tf2_py.
-tf2_py_DIR:PATH=/opt/ros/jade/share/tf2_py/cmake
-
-//The directory containing a CMake configuration file for tf2_ros.
-tf2_ros_DIR:PATH=/opt/ros/jade/share/tf2_ros/cmake
-
-//The directory containing a CMake configuration file for tf.
-tf_DIR:PATH=/opt/ros/jade/share/tf/cmake
 
 //Value Computed by CMake
 thrust_vis_BINARY_DIR:STATIC=/home/peter/thrust_vis/build/thrust_vis

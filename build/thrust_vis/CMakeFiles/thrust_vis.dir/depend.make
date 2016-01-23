@@ -74,6 +74,7 @@ thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/CameraInfo.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/CompressedImage.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/Image.h
+thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/Joy.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/RegionOfInterest.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/image_encodings.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/std_msgs/Float32.h
