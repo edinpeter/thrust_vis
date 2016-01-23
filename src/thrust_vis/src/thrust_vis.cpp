@@ -20,6 +20,8 @@ using namespace std;
 float pitch = 0 ;
 float roll = 0;
 float compass = 0;
+
+float empty_thrusts[] = {0,0,0,0};
 Mat diag(600,500,CV_8UC3, Scalar(255,255,255));
 
 /*
@@ -62,10 +64,18 @@ public:
         on their members.Each message is preceeded with "const" to show that it's a read only object.
     */
     void joyCB(const sensor_msgs::Joy::ConstPtr& joy_msg){
+        int RIGHT_TRIGGER = 14; //???
+        int LEFT_TRIGGER = 13; //???
 
+        if(joy_msg->axes[RIGHT_TRIGGER] < -0.05){
+
+        }
+        else if(joy_msg->axes[LEFT_TRIGGER] < -0.05){
+
+        }
     }
     void updateCB(const std_msgs::Float32::ConstPtr& val){
-        update_diagram(val->data);
+        update_diagram(val->data, empty_thrusts);
         ROS_INFO("Creating diagram");
     }
     void imuCB(const imu_3dm_gx4::FilterOutput::ConstPtr& filter){
@@ -80,13 +90,13 @@ public:
     /*
         Non-callback methods can be in here and also outside of the class. Just a preference.
     */
-    void update_diagram(float power){
+    void update_diagram(float fwbw, float thrusterPowers[]){
 
-        if(power < 1){
-            rectangle(diag, Point(303,275),Point(322, 275 + (-1 * power * ((383.0 - 278)/100.0))),Scalar(0,0,200),-1);
+        if(fwbw < 1){
+            rectangle(diag, Point(303,275),Point(322, 275 + (-1 * fwbw * ((383.0 - 278)/100.0))),Scalar(0,0,200),-1);
         }
-        else if(power > 1){
-            rectangle(diag, Point(303,275),Point(322, 275 - power * ((383.0 - 278)/100.0)),Scalar(200,0,0),-1);
+        else if(fwbw > 1){
+            rectangle(diag, Point(303,275),Point(322, 275 - fwbw * ((383.0 - 278)/100.0)),Scalar(200,0,0),-1);
         }
 
         img_bridge = cv_bridge::CvImage(header, sensor_msgs::image_encodings::RGB8, diag);
