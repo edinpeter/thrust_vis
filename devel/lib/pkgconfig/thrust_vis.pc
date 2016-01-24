@@ -1,8 +1,0 @@
-prefix=/home/kamille/thrust_vis/devel
-
-Name: thrust_vis
-Description: Description of thrust_vis
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/kamille/thrust_vis/devel/lib 
-Requires: 

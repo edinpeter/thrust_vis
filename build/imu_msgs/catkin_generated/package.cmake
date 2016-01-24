@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "imu_msg")
-set(imu_msg_MAINTAINER "peter <peter@todo.todo>")
-set(imu_msg_DEPRECATED "")
-set(imu_msg_VERSION "0.0.0")
-set(imu_msg_BUILD_DEPENDS "message_generation")
-set(imu_msg_RUN_DEPENDS "message_runtime")
-set(imu_msg_BUILDTOOL_DEPENDS "catkin")
