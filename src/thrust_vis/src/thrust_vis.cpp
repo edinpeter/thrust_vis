@@ -64,22 +64,28 @@ joySub = nh.subscribe<sensor_msgs::Joy>("joy", 1, &thrust_vis::joyCB, this);
         on their members.Each message is preceeded with "const" to show that it's a read only object.
     */
         void joyCB(const sensor_msgs::Joy::ConstPtr& joy_msg){
-        int RIGHT_TRIGGER = 14; //???
-        int LEFT_TRIGGER = 13; //???
+        int RIGHT_TRIGGER = 13; //???
+        int LEFT_TRIGGER = 12; //???
         float Thrust_power[4];
         float color;
         
-        if(joy_msg->axes[RIGHT_TRIGGER] < -0.05){
+        if(joy_msg->axes[RIGHT_TRIGGER] < 1){
 			//UP
-			color = (.05/255)*joy_msg->axes[RIGHT_TRIGGER];
+			color = (255)*joy_msg->axes[RIGHT_TRIGGER];
 			Thrust_power[0] = color;
-			update_diagram(joy_msg->axes[RIGHT_TRIGGER], Thrust_power);
+			Thrust_power[1] = color;
+			Thrust_power[2] = color;
+			Thrust_power[3] = color;
+			update_diagram(joy_msg->axes[1]*100, Thrust_power);
         }
-        else if(joy_msg->axes[LEFT_TRIGGER] < -0.05){
+        else if(joy_msg->axes[LEFT_TRIGGER] < 1){
 			//DOWN
-			color = (.05/255)*joy_msg->axes[LEFT_TRIGGER];
+			color = (255)*joy_msg->axes[LEFT_TRIGGER];
 			Thrust_power[0] = color;
-			update_diagram(joy_msg->axes[LEFT_TRIGGER], Thrust_power); 
+			Thrust_power[1] = color;
+			Thrust_power[2] = color;
+			Thrust_power[3] = color;
+			update_diagram(joy_msg->axes[1]*100, Thrust_power); 
         }
     }
     
@@ -90,13 +96,13 @@ joySub = nh.subscribe<sensor_msgs::Joy>("joy", 1, &thrust_vis::joyCB, this);
         
         if(val->data < -0.05){
 			//UP
-			color = -(2550)*val->data;
+			color = -(255)*val->data;
 			Thrust_power[0] = color;
 			update_diagram(val->data, Thrust_power);
         }
         else if(val->data < 0.05){
 			//DOWN
-			color = (255/.1)*val->data;
+			color = (255)*val->data;
 			Thrust_power[0] = color;
 			update_diagram(val->data, Thrust_power); 
         }
@@ -170,38 +176,38 @@ joySub = nh.subscribe<sensor_msgs::Joy>("joy", 1, &thrust_vis::joyCB, this);
         /*
 			Front right vertical thruster
         */
-			if(thrusterPowers[0] > 0){
-				rectangle(diag, Point(203,128),Point(232,162),Scalar(255 ,255 - thrusterPowers[0], 255 - thrusterPowers[0]), -1);
+			if(thrusterPowers[1] > 0){
+				rectangle(diag, Point(203,128),Point(232,162),Scalar(255 ,255 - thrusterPowers[1], 255 - thrusterPowers[1]), -1);
 			}
-			else if(thrusterPowers[0] < 0){
-				thrusterPowers[0] *= -1;
-				rectangle(diag, Point(203,128),Point(232,162),Scalar(255 - thrusterPowers[0], 255 - thrusterPowers[0], 255), -1);
-				thrusterPowers[0] *= -1;
+			else if(thrusterPowers[1] < 0){
+				thrusterPowers[1] *= -1;
+				rectangle(diag, Point(203,128),Point(232,162),Scalar(255 - thrusterPowers[1], 255 - thrusterPowers[1], 255), -1);
+				thrusterPowers[1] *= -1;
 
 			}
         /*
 			Rear left vertical thruster
         */
-			if(thrusterPowers[0] > 0){
-				rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 ,255 - thrusterPowers[0], 255 - thrusterPowers[0]), -1);
+			if(thrusterPowers[2] > 0){
+				rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 ,255 - thrusterPowers[2], 255 - thrusterPowers[2]), -1);
 			}
-			else if(thrusterPowers[0] < 0){
-				thrusterPowers[0] *= -1;
-				rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 - thrusterPowers[0], 255 - thrusterPowers[0], 255), -1);
-				thrusterPowers[0] *= -1;
+			else if(thrusterPowers[2] < 0){
+				thrusterPowers[2] *= -1;
+				rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 - thrusterPowers[2], 255 - thrusterPowers[2], 255), -1);
+				thrusterPowers[2] *= -1;
 
 			}
         /*
 			Rear right vertical thruster
         */
-			if(thrusterPowers[0] > 0){
+			if(thrusterPowers[3] > 0){
 				Scalar color(255,255,255);
-				rectangle(diag, Point(203,422),Point(232,388),Scalar(255 ,255 - thrusterPowers[0], 255 - thrusterPowers[0]), -1);
+				rectangle(diag, Point(203,422),Point(232,388),Scalar(255 ,255 - thrusterPowers[3], 255 - thrusterPowers[3]), -1);
 			}
-			else if(thrusterPowers[0] < 0){
-				thrusterPowers[0] *= -1;
-				rectangle(diag, Point(203,422),Point(232,388),Scalar(255 - thrusterPowers[0], 255 - thrusterPowers[0], 255), -1);
-				thrusterPowers[0] *= -1;
+			else if(thrusterPowers[3] < 0){
+				thrusterPowers[3] *= -1;
+				rectangle(diag, Point(203,422),Point(232,388),Scalar(255 - thrusterPowers[3], 255 - thrusterPowers[3], 255), -1);
+				thrusterPowers[3] *= -1;
 
 			}
 
