@@ -1,0 +1,8 @@
+prefix=/home/kamille/thrust_vis/devel
+
+Name: imu_msg
+Description: Description of imu_msg
+Version: 0.0.0
+Cflags: -I/home/kamille/thrust_vis/devel/include
+Libs: -L/home/kamille/thrust_vis/devel/lib 
+Requires: message_runtime

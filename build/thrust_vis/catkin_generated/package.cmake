@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "thrust_vis")
+set(thrust_vis_MAINTAINER "peter <peter@todo.todo>")
+set(thrust_vis_DEPRECATED "")
+set(thrust_vis_VERSION "0.0.0")
+set(thrust_vis_BUILD_DEPENDS "boost" "point_message" "libopencv-dev" "python" "python-opencv" "rosconsole" "sensor_msgs" "roscpp")
+set(thrust_vis_RUN_DEPENDS "point_message" "catkin" "boost" "libopencv-dev" "python" "python-opencv" "rosconsole" "sensor_msgs")
+set(thrust_vis_BUILDTOOL_DEPENDS "catkin")
