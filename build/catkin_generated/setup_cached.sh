@@ -9,9 +9,9 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/peter/thrust_vis/devel:$CMAKE_PREFIX_PATH"
 export CPATH="/home/peter/thrust_vis/devel/include:$CPATH"
-export LD_LIBRARY_PATH="/home/peter/thrust_vis/devel/lib:/home/peter/thrust_vis/devel/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/home/peter/thrust_vis/devel/lib:/home/peter/thrust_vis/devel/lib/x86_64-linux-gnu:/opt/ros/jade/lib/x86_64-linux-gnu:/opt/ros/jade/lib"
 export PATH="/home/peter/thrust_vis/devel/bin:$PATH"
-export PKG_CONFIG_PATH="/home/peter/thrust_vis/devel/lib/pkgconfig:/home/peter/thrust_vis/devel/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH"
+export PKG_CONFIG_PATH="/home/peter/thrust_vis/devel/lib/pkgconfig:/home/peter/thrust_vis/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/jade/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/jade/lib/pkgconfig"
 export PWD="/home/peter/thrust_vis/build"
 export PYTHONPATH="/home/peter/thrust_vis/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/peter/thrust_vis/devel/share/common-lisp"
