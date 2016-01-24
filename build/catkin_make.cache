@@ -1,2 +1,2 @@
 imu:imu_msgs:thrust_vis
--DCATKIN_DEVEL_PREFIX=/home/peter/thrust_vis/devel -DCMAKE_INSTALL_PREFIX=/home/peter/thrust_vis/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/kamille/thrust_vis/devel -DCMAKE_INSTALL_PREFIX=/home/kamille/thrust_vis/install -G Unix Makefiles

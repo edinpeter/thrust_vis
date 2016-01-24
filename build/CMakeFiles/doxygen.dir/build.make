@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/thrust_vis/src
+CMAKE_SOURCE_DIR = /home/kamille/thrust_vis/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/thrust_vis/build
+CMAKE_BINARY_DIR = /home/kamille/thrust_vis/build
 
 # Utility rule file for doxygen.
 
@@ -60,6 +60,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/peter/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/thrust_vis/src /home/peter/thrust_vis/src /home/peter/thrust_vis/build /home/peter/thrust_vis/build /home/peter/thrust_vis/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kamille/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamille/thrust_vis/src /home/kamille/thrust_vis/src /home/kamille/thrust_vis/build /home/kamille/thrust_vis/build /home/kamille/thrust_vis/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

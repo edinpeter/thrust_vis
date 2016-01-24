@@ -66,17 +66,44 @@ public:
     void joyCB(const sensor_msgs::Joy::ConstPtr& joy_msg){
         int RIGHT_TRIGGER = 14; //???
         int LEFT_TRIGGER = 13; //???
+        float Thrust_power[4];
+        float color;
+        
 
         if(joy_msg->axes[RIGHT_TRIGGER] < -0.05){
-
+			//UP
+			color = (.05/255)*joy_msg->axes[RIGHT_TRIGGER];
+			Thrust_power[0] = color;
+			update_diagram(joy_msg->axes[RIGHT_TRIGGER], Thrust_power);
         }
         else if(joy_msg->axes[LEFT_TRIGGER] < -0.05){
-
+			//DOWN
+			color = (.05/255)*joy_msg->axes[LEFT_TRIGGER];
+			Thrust_power[0] = color;
+			update_diagram(joy_msg->axes[LEFT_TRIGGER], Thrust_power); 
         }
     }
     void updateCB(const std_msgs::Float32::ConstPtr& val){
-        update_diagram(val->data, empty_thrusts);
+		
+		float Thrust_power[4];
+        float color;
+        
+        if(val->data < -0.05){
+			//UP
+			color = (.05/255)*val->data;
+			Thrust_power[0] = color;
+			update_diagram(val->data, Thrust_power);
+        }
+        else if(val->data < 0.05){
+			//DOWN
+			color = (.05/255)*val->data;
+			Thrust_power[0] = color;
+			update_diagram(val->data, Thrust_power); 
+        }
+		
+        //update_diagram(val->data, empty_thrusts);
         ROS_INFO("Creating diagram");
+        ROS_INFO("Testing");
     }
     void imuCB(const imu_3dm_gx4::FilterOutput::ConstPtr& filter){
         float x,y,z,w;
@@ -90,13 +117,27 @@ public:
     /*
         Non-callback methods can be in here and also outside of the class. Just a preference.
     */
-    void update_diagram(float fwbw, float thrusterPowers[]){
+    void update_diagram(float fwbw, float thrusterPowers[]){        
+        
+        if(fwbw < 0) {
+            rectangle(diag, Point(303,275),Point(322, 275 + (-1 * fwbw * ((383.0 - 278)/100.0))),Scalar(0,0,thrusterPowers[0]),-1);
+            
+            rectangle(diag, Point(100,125), Point(65,165), Scalar(0,0,thrusterPowers[0]),-1);
+            rectangle(diag, Point(200,125), Point(235,165), Scalar(0,0,thrusterPowers[0]),-1);
+            
+            rectangle(diag,Point(100,425),Point(65,385), Scalar(0,0,thrusterPowers[0]),-1);
+            rectangle(diag,Point(200,425),Point(235,385), Scalar(0,0,thrusterPowers[0]),-1);
 
-        if(fwbw < 1){
-            rectangle(diag, Point(303,275),Point(322, 275 + (-1 * fwbw * ((383.0 - 278)/100.0))),Scalar(0,0,200),-1);
         }
-        else if(fwbw > 1){
+        else if(fwbw > 0){
             rectangle(diag, Point(303,275),Point(322, 275 - fwbw * ((383.0 - 278)/100.0)),Scalar(200,0,0),-1);
+            
+                        
+            rectangle(diag, Point(100,125), Point(65,165), Scalar(thrusterPowers[0],0,0),-1);
+            rectangle(diag, Point(200,125), Point(235,165), Scalar(thrusterPowers[0],0,0),-1);
+            
+            rectangle(diag,Point(100,425),Point(65,385), Scalar(thrusterPowers[0],0,0),-1);
+            rectangle(diag,Point(200,425),Point(235,385), Scalar(thrusterPowers[0],0,0),-1);
         }
 
         img_bridge = cv_bridge::CvImage(header, sensor_msgs::image_encodings::RGB8, diag);

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "thrust_vis"
-PROJECT_SPACE_DIR = "/home/peter/thrust_vis/devel"
+PROJECT_SPACE_DIR = "/home/kamille/thrust_vis/devel"
 PROJECT_VERSION = "0.0.0"

@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC    -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/peter/thrust_vis/build/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/peter/thrust_vis/build/gtest/src:/home/peter/thrust_vis/build/gtest 
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/kamille/thrust_vis/build/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/kamille/thrust_vis/build/gtest/src:/home/kamille/thrust_vis/build/gtest 

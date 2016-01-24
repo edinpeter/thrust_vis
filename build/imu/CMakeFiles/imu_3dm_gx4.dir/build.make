@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/thrust_vis/src
+CMAKE_SOURCE_DIR = /home/kamille/thrust_vis/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/thrust_vis/build
+CMAKE_BINARY_DIR = /home/kamille/thrust_vis/build
 
 # Include any dependencies generated for this target.
 include imu/CMakeFiles/imu_3dm_gx4.dir/depend.make
@@ -50,18 +50,18 @@ include imu/CMakeFiles/imu_3dm_gx4.dir/progress.make
 include imu/CMakeFiles/imu_3dm_gx4.dir/flags.make
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o: imu/CMakeFiles/imu_3dm_gx4.dir/flags.make
-imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o: /home/peter/thrust_vis/src/imu/src/imu_3dm_gx4.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/thrust_vis/build/CMakeFiles $(CMAKE_PROGRESS_1)
+imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o: /home/kamille/thrust_vis/src/imu/src/imu_3dm_gx4.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kamille/thrust_vis/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o"
-	cd /home/peter/thrust_vis/build/imu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o -c /home/peter/thrust_vis/src/imu/src/imu_3dm_gx4.cpp
+	cd /home/kamille/thrust_vis/build/imu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o -c /home/kamille/thrust_vis/src/imu/src/imu_3dm_gx4.cpp
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.i"
-	cd /home/peter/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/thrust_vis/src/imu/src/imu_3dm_gx4.cpp > CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.i
+	cd /home/kamille/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kamille/thrust_vis/src/imu/src/imu_3dm_gx4.cpp > CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.i
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.s"
-	cd /home/peter/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/thrust_vis/src/imu/src/imu_3dm_gx4.cpp -o CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.s
+	cd /home/kamille/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kamille/thrust_vis/src/imu/src/imu_3dm_gx4.cpp -o CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.s
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o.requires:
 .PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o.requires
@@ -73,18 +73,18 @@ imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o.provides: imu/CMakeFiles/im
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o.provides.build: imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o: imu/CMakeFiles/imu_3dm_gx4.dir/flags.make
-imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o: /home/peter/thrust_vis/src/imu/src/imu.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/thrust_vis/build/CMakeFiles $(CMAKE_PROGRESS_2)
+imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o: /home/kamille/thrust_vis/src/imu/src/imu.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kamille/thrust_vis/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o"
-	cd /home/peter/thrust_vis/build/imu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o -c /home/peter/thrust_vis/src/imu/src/imu.cpp
+	cd /home/kamille/thrust_vis/build/imu && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o -c /home/kamille/thrust_vis/src/imu/src/imu.cpp
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.i"
-	cd /home/peter/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/thrust_vis/src/imu/src/imu.cpp > CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.i
+	cd /home/kamille/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kamille/thrust_vis/src/imu/src/imu.cpp > CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.i
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.s"
-	cd /home/peter/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/thrust_vis/src/imu/src/imu.cpp -o CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.s
+	cd /home/kamille/thrust_vis/build/imu && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kamille/thrust_vis/src/imu/src/imu.cpp -o CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.s
 
 imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o.requires:
 .PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o.requires
@@ -103,32 +103,32 @@ imu_3dm_gx4_OBJECTS = \
 # External object files for target imu_3dm_gx4
 imu_3dm_gx4_EXTERNAL_OBJECTS =
 
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/build.make
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/libroscpp.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/librosconsole.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/librosconsole_log4cxx.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/librosconsole_backend_interface.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/liblog4cxx.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/libxmlrpcpp.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/libroscpp_serialization.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/librostime.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/jade/lib/libcpp_common.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4"
-	cd /home/peter/thrust_vis/build/imu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imu_3dm_gx4.dir/link.txt --verbose=$(VERBOSE)
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/build.make
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/libroscpp.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/librosconsole.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/liblog4cxx.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/libxmlrpcpp.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/libroscpp_serialization.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/librostime.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /opt/ros/indigo/lib/libcpp_common.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4: imu/CMakeFiles/imu_3dm_gx4.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4"
+	cd /home/kamille/thrust_vis/build/imu && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imu_3dm_gx4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-imu/CMakeFiles/imu_3dm_gx4.dir/build: /home/peter/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4
+imu/CMakeFiles/imu_3dm_gx4.dir/build: /home/kamille/thrust_vis/devel/lib/imu_3dm_gx4/imu_3dm_gx4
 .PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/build
 
 imu/CMakeFiles/imu_3dm_gx4.dir/requires: imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o.requires
@@ -136,10 +136,10 @@ imu/CMakeFiles/imu_3dm_gx4.dir/requires: imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.
 .PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/requires
 
 imu/CMakeFiles/imu_3dm_gx4.dir/clean:
-	cd /home/peter/thrust_vis/build/imu && $(CMAKE_COMMAND) -P CMakeFiles/imu_3dm_gx4.dir/cmake_clean.cmake
+	cd /home/kamille/thrust_vis/build/imu && $(CMAKE_COMMAND) -P CMakeFiles/imu_3dm_gx4.dir/cmake_clean.cmake
 .PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/clean
 
 imu/CMakeFiles/imu_3dm_gx4.dir/depend:
-	cd /home/peter/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/thrust_vis/src /home/peter/thrust_vis/src/imu /home/peter/thrust_vis/build /home/peter/thrust_vis/build/imu /home/peter/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kamille/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamille/thrust_vis/src /home/kamille/thrust_vis/src/imu /home/kamille/thrust_vis/build /home/kamille/thrust_vis/build/imu /home/kamille/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : imu/CMakeFiles/imu_3dm_gx4.dir/depend
 
