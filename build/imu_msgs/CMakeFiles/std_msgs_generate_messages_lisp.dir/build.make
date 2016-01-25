@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kamille/thrust_vis/src
+CMAKE_SOURCE_DIR = /home/peter/thrust_vis/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamille/thrust_vis/build
+CMAKE_BINARY_DIR = /home/peter/thrust_vis/build
 
 # Utility rule file for std_msgs_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build: std_msgs_generate
 .PHONY : imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 
 imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	cd /home/kamille/thrust_vis/build/imu_msgs && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/peter/thrust_vis/build/imu_msgs && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend:
-	cd /home/kamille/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamille/thrust_vis/src /home/kamille/thrust_vis/src/imu_msgs /home/kamille/thrust_vis/build /home/kamille/thrust_vis/build/imu_msgs /home/kamille/thrust_vis/build/imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peter/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/thrust_vis/src /home/peter/thrust_vis/src/imu_msgs /home/peter/thrust_vis/build /home/peter/thrust_vis/build/imu_msgs /home/peter/thrust_vis/build/imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : imu_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 

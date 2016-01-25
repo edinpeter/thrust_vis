@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kamille/thrust_vis/src/thrust_vis/src/thrust_vis.cpp" "/home/kamille/thrust_vis/build/thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o"
+  "/home/peter/thrust_vis/src/thrust_vis/src/thrust_vis.cpp" "/home/peter/thrust_vis/build/thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,9 +22,9 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/opencv"
-  "/home/kamille/thrust_vis/src/thrust_vis/include"
-  "/home/kamille/thrust_vis/devel/include"
-  "/opt/ros/indigo/include"
+  "/home/peter/thrust_vis/src/thrust_vis/include"
+  "/home/peter/thrust_vis/devel/include"
+  "/opt/ros/jade/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

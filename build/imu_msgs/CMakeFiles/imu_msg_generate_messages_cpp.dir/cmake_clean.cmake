@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/imu_msg_generate_messages_cpp"
-  "/home/kamille/thrust_vis/devel/include/imu_msg/statsMsg.h"
-  "/home/kamille/thrust_vis/devel/include/imu_msg/pointMsg.h"
+  "/home/peter/thrust_vis/devel/include/imu_msg/pointMsg.h"
+  "/home/peter/thrust_vis/devel/include/imu_msg/statsMsg.h"
 )
 
 # Per-language clean rules from dependency scanning.

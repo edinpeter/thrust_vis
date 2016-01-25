@@ -1,0 +1,7 @@
+<launch>
+	<node name="joy_node" pkg="joy" type="joy_node"/>
+	<remap from="image" to="/thrust_vis"/>
+    <node pkg="image_view" type="image_view" name="image_view"/>
+    <node name="thrust_vis" pkg="thrust_vis" type="thrust_vis"/>
+
+</launch>

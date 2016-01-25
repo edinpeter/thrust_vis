@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kamille/thrust_vis/src
+CMAKE_SOURCE_DIR = /home/peter/thrust_vis/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamille/thrust_vis/build
+CMAKE_BINARY_DIR = /home/peter/thrust_vis/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kamille/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kamille/thrust_vis/build/CMakeFiles /home/kamille/thrust_vis/build/thrust_vis/CMakeFiles/progress.marks
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kamille/thrust_vis/build/CMakeFiles 0
+	cd /home/peter/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/thrust_vis/build/CMakeFiles /home/peter/thrust_vis/build/thrust_vis/CMakeFiles/progress.marks
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/thrust_vis/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/clean
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/preinstall
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/preinstall
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kamille/thrust_vis/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/peter/thrust_vis/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 thrust_vis/CMakeFiles/thrust_vis.dir/rule:
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/CMakeFiles/thrust_vis.dir/rule
+	cd /home/peter/thrust_vis/build && $(MAKE) -f CMakeFiles/Makefile2 thrust_vis/CMakeFiles/thrust_vis.dir/rule
 .PHONY : thrust_vis/CMakeFiles/thrust_vis.dir/rule
 
 # Convenience name for target.
@@ -160,7 +160,7 @@ thrust_vis: thrust_vis/CMakeFiles/thrust_vis.dir/rule
 
 # fast build rule for target.
 thrust_vis/fast:
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/build
+	cd /home/peter/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/build
 .PHONY : thrust_vis/fast
 
 src/thrust_vis.o: src/thrust_vis.cpp.o
@@ -168,7 +168,7 @@ src/thrust_vis.o: src/thrust_vis.cpp.o
 
 # target to build an object file
 src/thrust_vis.cpp.o:
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o
+	cd /home/peter/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o
 .PHONY : src/thrust_vis.cpp.o
 
 src/thrust_vis.i: src/thrust_vis.cpp.i
@@ -176,7 +176,7 @@ src/thrust_vis.i: src/thrust_vis.cpp.i
 
 # target to preprocess a source file
 src/thrust_vis.cpp.i:
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.i
+	cd /home/peter/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.i
 .PHONY : src/thrust_vis.cpp.i
 
 src/thrust_vis.s: src/thrust_vis.cpp.s
@@ -184,7 +184,7 @@ src/thrust_vis.s: src/thrust_vis.cpp.s
 
 # target to generate assembly for a file
 src/thrust_vis.cpp.s:
-	cd /home/kamille/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.s
+	cd /home/peter/thrust_vis/build && $(MAKE) -f thrust_vis/CMakeFiles/thrust_vis.dir/build.make thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.s
 .PHONY : src/thrust_vis.cpp.s
 
 # Help Target
@@ -215,6 +215,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kamille/thrust_vis/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/peter/thrust_vis/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

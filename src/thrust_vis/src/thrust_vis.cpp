@@ -53,7 +53,6 @@ public:
                 ,callback method inside the class, CB arguments (usually only "this"))
                 */
 		imu_sub = nh.subscribe<imu_3dm_gx4::FilterOutput>("/imu/filter", 1, &thrust_vis::imuCB, this);
-		updSub = nh.subscribe<std_msgs::Float32>("update",1,&thrust_vis::updateCB, this);
 		joySub = nh.subscribe<sensor_msgs::Joy>("joy", 1, &thrust_vis::joyCB, this);
 	}
 	/*

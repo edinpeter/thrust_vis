@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kamille/thrust_vis/src
+CMAKE_SOURCE_DIR = /home/peter/thrust_vis/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kamille/thrust_vis/build
+CMAKE_BINARY_DIR = /home/peter/thrust_vis/build
 
 # Utility rule file for imu_3dm_gx4_genpy.
 
@@ -56,10 +56,10 @@ imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build: imu_3dm_gx4_genpy
 .PHONY : imu/CMakeFiles/imu_3dm_gx4_genpy.dir/build
 
 imu/CMakeFiles/imu_3dm_gx4_genpy.dir/clean:
-	cd /home/kamille/thrust_vis/build/imu && $(CMAKE_COMMAND) -P CMakeFiles/imu_3dm_gx4_genpy.dir/cmake_clean.cmake
+	cd /home/peter/thrust_vis/build/imu && $(CMAKE_COMMAND) -P CMakeFiles/imu_3dm_gx4_genpy.dir/cmake_clean.cmake
 .PHONY : imu/CMakeFiles/imu_3dm_gx4_genpy.dir/clean
 
 imu/CMakeFiles/imu_3dm_gx4_genpy.dir/depend:
-	cd /home/kamille/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kamille/thrust_vis/src /home/kamille/thrust_vis/src/imu /home/kamille/thrust_vis/build /home/kamille/thrust_vis/build/imu /home/kamille/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4_genpy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peter/thrust_vis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/thrust_vis/src /home/peter/thrust_vis/src/imu /home/peter/thrust_vis/build /home/peter/thrust_vis/build/imu /home/peter/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : imu/CMakeFiles/imu_3dm_gx4_genpy.dir/depend
 

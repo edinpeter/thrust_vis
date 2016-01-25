@@ -1,8 +1,8 @@
-# Install script for directory: /home/kamille/thrust_vis/src/thrust_vis
+# Install script for directory: /home/peter/thrust_vis/src/thrust_vis
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/kamille/thrust_vis/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/peter/thrust_vis/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kamille/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_vis.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_vis.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/thrust_vis/cmake" TYPE FILE FILES
-    "/home/kamille/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_visConfig.cmake"
-    "/home/kamille/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_visConfig-version.cmake"
+    "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_visConfig.cmake"
+    "/home/peter/thrust_vis/build/thrust_vis/catkin_generated/installspace/thrust_visConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/thrust_vis" TYPE FILE FILES "/home/kamille/thrust_vis/src/thrust_vis/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/thrust_vis" TYPE FILE FILES "/home/peter/thrust_vis/src/thrust_vis/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

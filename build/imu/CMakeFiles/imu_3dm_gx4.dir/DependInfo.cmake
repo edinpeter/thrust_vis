@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kamille/thrust_vis/src/imu/src/imu.cpp" "/home/kamille/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o"
-  "/home/kamille/thrust_vis/src/imu/src/imu_3dm_gx4.cpp" "/home/kamille/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o"
+  "/home/peter/thrust_vis/src/imu/src/imu.cpp" "/home/peter/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4.dir/src/imu.cpp.o"
+  "/home/peter/thrust_vis/src/imu/src/imu_3dm_gx4.cpp" "/home/peter/thrust_vis/build/imu/CMakeFiles/imu_3dm_gx4.dir/src/imu_3dm_gx4.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/kamille/thrust_vis/devel/include"
-  "/opt/ros/indigo/include"
+  "/home/peter/thrust_vis/devel/include"
+  "/opt/ros/jade/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

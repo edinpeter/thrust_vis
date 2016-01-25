@@ -1,8 +1,8 @@
-prefix=/home/kamille/thrust_vis/install
+prefix=/home/peter/thrust_vis/install
 
 Name: imu_3dm_gx4
 Description: Description of imu_3dm_gx4
 Version: 0.0.4
-Cflags: -I/home/kamille/thrust_vis/install/include
-Libs: -L/home/kamille/thrust_vis/install/lib 
+Cflags: -I/home/peter/thrust_vis/install/include
+Libs: -L/home/peter/thrust_vis/install/lib 
 Requires: message_runtime geometry_msgs sensor_msgs

@@ -3,9 +3,9 @@
   (:export
    "<STATSMSG>"
    "STATSMSG"
-   "<POINTMSG>"
-   "POINTMSG"
    "<FILTEROUTPUT>"
    "FILTEROUTPUT"
+   "<POINTMSG>"
+   "POINTMSG"
   ))
 
