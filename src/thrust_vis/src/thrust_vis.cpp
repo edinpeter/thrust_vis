@@ -13,15 +13,20 @@
 #include "sensor_msgs/Joy.h"
 #define PI 3.14159
 
+
 //These make life easier.
 using namespace cv;
 using namespace std;
 
+const float PIo2 = 3.14159 / 2.0;
 float pitch = 0 ;
 float roll = 0;
 float compass = 0;
 
 float empty_thrusts[] = {0,0,0,0};
+float pitchCorrections;
+float rollCorrections;
+
 Mat diag(600,500,CV_8UC3, Scalar(255,255,255));
 
 /*
@@ -74,7 +79,7 @@ public:
 			thrustPower[1] = color;
 			thrustPower[2] = color;
 			thrustPower[3] = color;
-			update_diagram(joy_msg->axes[1]*100, thrustPower);
+			update_diagram(joy_msg->axes[1]*100, thrustPower, pitchCorrections, rollCorrections);
 		}
 		else if(joy_msg->axes[LEFT_TRIGGER] < 1){
 			//DOWN
@@ -83,7 +88,7 @@ public:
 			thrustPower[1] = color;
 			thrustPower[2] = color;
 			thrustPower[3] = color;
-			update_diagram(joy_msg->axes[1]*100, thrustPower);
+			update_diagram(joy_msg->axes[1]*100, thrustPower, pitchCorrections, rollCorrections);
 		}
 	}
 	void imuCB(const imu_3dm_gx4::FilterOutput::ConstPtr& filter){
@@ -94,11 +99,18 @@ public:
 		w=filter->orientation.w;
 		pitch = asin(2*(y*w-x*z));
 		roll = atan((2*(x*w+y*z))/(x*x+y*y-z*z-w*w));
+
+		float pitchCorr = pitch / PIo2;
+		float rollCorr = pitch / PIo2;
+
+		pitchCorrections = 255 / 3.0 * pitchCorr;
+		rollCorrections = 255 / 3.0 * rollCorr;
+
 	}
 	/*
         Non-callback methods can be in here and also outside of the class. Just a preference.
     */
-	void update_diagram(float fwbw, float thrusterPowers[]){
+	void update_diagram(float fwbw, float thrusterPowers[], float pitchCorr, float rollCorr){
 		//thrusterPowers[0] = fwbw;
 		if(fwbw < 1){
 			rectangle(diag, Point(303,275),Point(322, 275 + (-1 * fwbw * ((383.0 - 278)/100.0))),Scalar(0,0,200),-1);
@@ -116,7 +128,6 @@ public:
 			thrusterPowers[0] *= -1;
 			rectangle(diag, Point(68,128),Point(97,162),Scalar(255 - thrusterPowers[0], 255 - thrusterPowers[0], 255), -1);
 			thrusterPowers[0] *= -1;
-
 		}
 		/*
             Front right vertical thruster
