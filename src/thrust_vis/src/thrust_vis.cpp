@@ -11,6 +11,7 @@
 #include <math.h>
 #include "imu_3dm_gx4/FilterOutput.h"
 #include "sensor_msgs/Joy.h"
+#include <std_msgs/Float32MultiArray.h>
 #define PI 3.14159
 
 
@@ -26,6 +27,9 @@ float compass = 0;
 float empty_thrusts[] = {0,0,0,0};
 float pitchCorrections;
 float rollCorrections;
+
+float imuCorrections[2][2];
+
 
 Mat diag(600,500,CV_8UC3, Scalar(255,255,255));
 
@@ -45,6 +49,8 @@ class thrust_vis
 	ros::Subscriber updSub;
 	ros::Subscriber joySub;
 
+	ros::Publisher imuCorrectionPublisher;
+
 public:
 	thrust_vis(): it(nh)
 	{
@@ -59,6 +65,8 @@ public:
                 */
 		imu_sub = nh.subscribe<imu_3dm_gx4::FilterOutput>("/imu/filter", 1, &thrust_vis::imuCB, this);
 		joySub = nh.subscribe<sensor_msgs::Joy>("joy", 1, &thrust_vis::joyCB, this);
+
+		imuCorrectionPublisher = nh.advertise<std_msgs::Float32MultiArray>("thrustNets",5);
 	}
 	/*
         Each of the below functions are "callbacks", basically what this node does in response to a different node
@@ -79,7 +87,7 @@ public:
 			thrustPower[1] = color;
 			thrustPower[2] = color;
 			thrustPower[3] = color;
-			update_diagram(joy_msg->axes[1]*100, thrustPower, pitchCorrections, rollCorrections);
+			update_diagram(joy_msg->axes[1]*100, thrustPower, imuCorrections);
 		}
 		else if(joy_msg->axes[LEFT_TRIGGER] < 1){
 			//DOWN
@@ -88,7 +96,7 @@ public:
 			thrustPower[1] = color;
 			thrustPower[2] = color;
 			thrustPower[3] = color;
-			update_diagram(joy_msg->axes[1]*100, thrustPower, pitchCorrections, rollCorrections);
+			update_diagram(joy_msg->axes[1]*100, thrustPower, imuCorrections);
 		}
 	}
 	void imuCB(const imu_3dm_gx4::FilterOutput::ConstPtr& filter){
@@ -101,17 +109,49 @@ public:
 		roll = atan((2*(x*w+y*z))/(x*x+y*y-z*z-w*w));
 
 		float pitchCorr = pitch / PIo2;
-		float rollCorr = pitch / PIo2;
+		float rollCorr = roll / PIo2;
 
 		pitchCorrections = 255 / 3.0 * pitchCorr;
 		rollCorrections = 255 / 3.0 * rollCorr;
+		imuCorrections[0][0] = 0;
+		imuCorrections[0][1] = 0;
+		imuCorrections[1][0] = 0;
+		imuCorrections[1][1] = 0;
+		
+		if(abs(pitchCorr) > 0.05){
+			imuCorrections[0][0] += pitchCorr;
+			imuCorrections[0][1] += pitchCorr;
 
+			imuCorrections[1][0] -= pitchCorr;
+			imuCorrections[1][1] -= pitchCorr;
+		}
+		if(abs(rollCorr) > 0.05){
+			imuCorrections[0][0] -= rollCorr;
+			imuCorrections[1][0] -= rollCorr;
+
+			imuCorrections[0][1] += rollCorr;
+			imuCorrections[1][1] += rollCorr;
+		}
+		update_diagram(0,empty_thrusts,imuCorrections);
 	}
+
 	/*
         Non-callback methods can be in here and also outside of the class. Just a preference.
     */
-	void update_diagram(float fwbw, float thrusterPowers[], float pitchCorr, float rollCorr){
-		//thrusterPowers[0] = fwbw;
+	void update_diagram(float fwbw, float thrusterPowers[], float imuCorr[2][2]){
+
+		std_msgs::Float32MultiArray msg;
+		float thrustNets[4];
+		
+		thrustNets[0] = thrusterPowers[0] + imuCorr[0][0] * 170;
+		thrustNets[1] = thrusterPowers[1] + imuCorr[0][1] * 170;
+		thrustNets[2] = thrusterPowers[2] + imuCorr[1][0] * 170;
+		thrustNets[3] = thrusterPowers[3] + imuCorr[1][1] * 170;
+
+		for(int i=0; i < 4; i++){
+			msg.data.push_back(thrustNets[i]);
+		}
+
 		if(fwbw < 1){
 			rectangle(diag, Point(303,275),Point(322, 275 + (-1 * fwbw * ((383.0 - 278)/100.0))),Scalar(0,0,200),-1);
 		}
@@ -121,55 +161,44 @@ public:
 		/*
             Front left vertical thruster
         */
-		if(thrusterPowers[0] > 0){
-			rectangle(diag, Point(68,128),Point(97,162),Scalar(255 ,255 - thrusterPowers[0], 255 - thrusterPowers[0]), -1);
+		if(thrustNets[0] >= 0){
+			rectangle(diag, Point(68,128),Point(97,162),Scalar(255 ,255 - thrustNets[0], 255 - thrustNets[0]), -1);
 		}
-		else if(thrusterPowers[0] < 0){
-			thrusterPowers[0] *= -1;
-			rectangle(diag, Point(68,128),Point(97,162),Scalar(255 - thrusterPowers[0], 255 - thrusterPowers[0], 255), -1);
-			thrusterPowers[0] *= -1;
+		else{
+			rectangle(diag, Point(68,128),Point(97,162),Scalar(255 + thrustNets[0], 255 + thrustNets[0], 255), -1);
 		}
 		/*
             Front right vertical thruster
         */
-		if(thrusterPowers[1] > 0){
-			rectangle(diag, Point(203,128),Point(232,162),Scalar(255 ,255 - thrusterPowers[1], 255 - thrusterPowers[1]), -1);
+		if(thrusterPowers[1] >= 0){
+			rectangle(diag, Point(203,128),Point(232,162),Scalar(255 ,255 - thrustNets[1], 255 - thrustNets[1]), -1);
 		}
-		else if(thrusterPowers[1] < 0){
-			thrusterPowers[1] *= -1;
-			rectangle(diag, Point(203,128),Point(232,162),Scalar(255 - thrusterPowers[1], 255 - thrusterPowers[1], 255), -1);
-			thrusterPowers[1] *= -1;
-
+		else{
+			rectangle(diag, Point(203,128),Point(232,162),Scalar(255 + thrustNets[1], 255 + thrustNets[1], 255), -1);
 		}
 		/*
             Rear left vertical thruster
         */
-		if(thrusterPowers[2] > 0){
-			rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 ,255 - thrusterPowers[2], 255 - thrusterPowers[2]), -1);
+		if(thrustNets[2] >= 0){
+			rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 ,255 - thrustNets[2], 255 - thrustNets[2]), -1);
 		}
-		else if(thrusterPowers[2] < 0){
-			thrusterPowers[2] *= -1;
-			rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 - thrusterPowers[2], 255 - thrusterPowers[2], 255), -1);
-			thrusterPowers[2] *= -1;
-
+		else{
+			rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 + thrustNets[2], 255 + thrustNets[2], 255), -1);
 		}
 		/*
             Rear right vertical thruster
         */
-		if(thrusterPowers[3] > 0){
-			Scalar color(255,255,255);
-			rectangle(diag, Point(203,422),Point(232,388),Scalar(255 ,255 - thrusterPowers[3], 255 - thrusterPowers[3]), -1);
+		if(thrustNets[3] >= 0){
+			rectangle(diag, Point(203,422),Point(232,388),Scalar(255 ,255 - thrustNets[3], 255 - thrustNets[3]), -1);
 		}
-		else if(thrusterPowers[3] < 0){
-			thrusterPowers[3] *= -1;
-			rectangle(diag, Point(203,422),Point(232,388),Scalar(255 - thrusterPowers[3], 255 - thrusterPowers[3], 255), -1);
-			thrusterPowers[3] *= -1;
-
+		else{
+			rectangle(diag, Point(203,422),Point(232,388),Scalar(255 + thrustNets[3], 255 + thrustNets[3], 255), -1);
 		}
 
 		img_bridge = cv_bridge::CvImage(header, sensor_msgs::image_encodings::RGB8, diag);
 		img_bridge.toImageMsg(img_msg);
 		image_pub.publish(img_msg);
+		imuCorrectionPublisher.publish(msg);
 		create_diagram();
 	}
 

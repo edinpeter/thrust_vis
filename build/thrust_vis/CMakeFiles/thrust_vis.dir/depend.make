@@ -78,5 +78,8 @@ thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/RegionOfInterest.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/sensor_msgs/image_encodings.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/std_msgs/Float32.h
+thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/std_msgs/Float32MultiArray.h
 thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/std_msgs/Header.h
+thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/std_msgs/MultiArrayDimension.h
+thrust_vis/CMakeFiles/thrust_vis.dir/src/thrust_vis.cpp.o: /opt/ros/jade/include/std_msgs/MultiArrayLayout.h
 

@@ -1,4 +1,5 @@
 <launch>
+	<include file="$(find imu_3dm_gx4)/launch/imu.launch"/>
 	<node name="joy_node" pkg="joy" type="joy_node"/>
 	<remap from="image" to="/thrust_vis"/>
     <node pkg="image_view" type="image_view" name="image_view"/>
