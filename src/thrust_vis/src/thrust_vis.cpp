@@ -158,6 +158,7 @@ public:
 		else if(fwbw > 1){
 			rectangle(diag, Point(303,275),Point(322, 275 - fwbw * ((383.0 - 278)/100.0)),Scalar(200,0,0),-1);
 		}
+
 		/*
             Front left vertical thruster
         */
@@ -167,15 +168,17 @@ public:
 		else{
 			rectangle(diag, Point(68,128),Point(97,162),Scalar(255 + thrustNets[0], 255 + thrustNets[0], 255), -1);
 		}
+
 		/*
             Front right vertical thruster
         */
-		if(thrusterPowers[1] >= 0){
+		if(thrustNets[1] >= 0){
 			rectangle(diag, Point(203,128),Point(232,162),Scalar(255 ,255 - thrustNets[1], 255 - thrustNets[1]), -1);
 		}
 		else{
 			rectangle(diag, Point(203,128),Point(232,162),Scalar(255 + thrustNets[1], 255 + thrustNets[1], 255), -1);
 		}
+
 		/*
             Rear left vertical thruster
         */
@@ -185,6 +188,7 @@ public:
 		else{
 			rectangle(diag, Point(97,422),Point(68, 388),Scalar(255 + thrustNets[2], 255 + thrustNets[2], 255), -1);
 		}
+
 		/*
             Rear right vertical thruster
         */
